@@ -1,0 +1,16 @@
+{
+  "name": "npc-emotional",
+  "version": "1.0.0",
+  "description": "Library to model NPC emotional reactions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "videogames",
+    "npc",
+    "emotions"
+  ],
+  "author": "Ivan Saez Zamora",
+  "license": "MIT"
+}
