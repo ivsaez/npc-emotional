@@ -2,9 +2,15 @@
   "name": "npc-emotional",
   "version": "1.0.0",
   "description": "Library to model NPC emotional reactions.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prebuild": "npm run test",
+    "build": "microbundle",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "videogames",
@@ -12,5 +18,21 @@
     "emotions"
   ],
   "author": "Ivan Saez Zamora",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "microbundle": "^0.14.2",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write", "eslint --fix", "git add"],
+    "*.ts": ["prettier --write", "eslint --fix", "git add"],
+    "*.{json,md}": ["prettier --write", "git add"]
+  },
+  "files": ["dist", "package.json", "README.md"]
 }
