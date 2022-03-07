@@ -60,5 +60,10 @@
     "dist",
     "package.json",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "npc-aspect": "^1.0.0",
+    "npc-mind": "^1.0.1",
+    "npc-relations": "^1.0.1"
+  }
 }
