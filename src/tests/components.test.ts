@@ -10,6 +10,7 @@ describe("Effect component should", () => {
     expect(component.strength).toBe(EffectStrength.High);
     expect(component.isNeutral).toBe(false);
     expect(component.value).toBe(25);
+    expect(component.directionVector).toBe(1);
   });
 
   it("create a neutral component", () => {
@@ -20,6 +21,7 @@ describe("Effect component should", () => {
     expect(component.strength).toBe(EffectStrength.Null);
     expect(component.isNeutral).toBe(true);
     expect(component.value).toBe(0);
+    expect(component.directionVector).toBe(0);
   });
 
   it("create a positive component", () => {
@@ -30,6 +32,7 @@ describe("Effect component should", () => {
     expect(component.strength).toBe(EffectStrength.Low);
     expect(component.isNeutral).toBe(false);
     expect(component.value).toBe(5);
+    expect(component.directionVector).toBe(1);
   });
 
   it("create a negative component", () => {
@@ -40,6 +43,7 @@ describe("Effect component should", () => {
     expect(component.strength).toBe(EffectStrength.Medium);
     expect(component.isNeutral).toBe(false);
     expect(component.value).toBe(-10);
+    expect(component.directionVector).toBe(-1);
   });
 
   it("create a metric component", () => {
@@ -50,6 +54,7 @@ describe("Effect component should", () => {
     expect(component.strength).toBe(EffectStrength.High);
     expect(component.isNeutral).toBe(false);
     expect(component.value).toBe(25);
+    expect(component.directionVector).toBe(1);
   });
 
   it("throw an exception when invalid none kinds passed", () => {

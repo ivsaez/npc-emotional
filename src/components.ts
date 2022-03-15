@@ -36,6 +36,14 @@ export class EffectComponent{
                 : StrengthValues[this._strength] * -1;
     }
 
+    get directionVector(): number{
+        return this._direction === EffectDirection.Negative
+            ? -1
+            : this._direction === EffectDirection.Positive
+                ? 1
+                : 0;
+    }
+
     get isNeutral(): boolean{
         return this._kind == EffectKind.None
         && this._direction == EffectDirection.Neutral

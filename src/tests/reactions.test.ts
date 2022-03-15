@@ -7,8 +7,9 @@ describe("Reactions should", () => {
 
     expect(reactions.any).toBe(false);
 
-    let reaction = new Reaction("name", EffectReaction.Negative);
-    reactions.append(reaction);
+    let appendReactions = new Reactions();
+    appendReactions.add("name", EffectReaction.Negative);
+    reactions.append(appendReactions);
 
     reactions.add("other", EffectReaction.VeryNegative);
 

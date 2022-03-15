@@ -40,10 +40,10 @@ export class Reactions{
         this._elements.push(new Reaction(name, reaction));
     }
 
-    append(reaction: Reaction){
-        if(reaction === undefined || reaction === null)
-            throw new Error("Reaction cannot be null.");
+    append(reactions: Reactions){
+        if(reactions === undefined || reactions === null)
+            throw new Error("Reactions cannot be null.");
         
-        this._elements.push(reaction);
+        reactions._elements.forEach(reaction => this._elements.push(reaction));
     }
 }
