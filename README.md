@@ -12,5 +12,5 @@ It is a class to model the emotional effect provoked by a NPC action.
 ## Situation
 A class that models the situation of different NPCs in a scene.
 
-## Applier
+## apply
 Given an Effect and a Situation it calculates the Reactions of the NPCs to the action.
