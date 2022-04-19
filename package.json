@@ -1,6 +1,6 @@
 {
   "name": "npc-emotional",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library to model NPC emotional reactions.",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
