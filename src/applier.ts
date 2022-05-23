@@ -31,7 +31,9 @@ function applyBroadcastEffect(effect: Effect, performer: IEmotional, crowd: IEmo
 {
     var reactions = new Reactions();
 
-    crowd.forEach(npc =>{
+    crowd
+    .filter(npc => npc.IsActive)
+    .forEach(npc =>{
         let overallImpression: number = applyBroadcastEffectTo(effect, performer, npc);
         if (overallImpression > 0) reactions.add(npc.Name, EffectReaction.VeryPositive);
         else if (overallImpression < 0) reactions.add(npc.Name, EffectReaction.VeryNegative);
@@ -146,14 +148,16 @@ function applyCrowdEffect(effect: Effect, performer: IEmotional, target: IEmotio
 
     for (let npc of crowd)
     {
-        if (npc.Relations.knows(target.Name))
-        {
-            var targetRelation = npc.Relations.get(target.Name);
-            reactions.append(applyToKnownTarget(effect, performer, targetRelation, direction, npc));
-        }
-        else
-        {
-            reactions.append(applyToUnknownTarget(effect, performer, target, direction, npc));
+        if(npc.IsActive){
+            if (npc.Relations.knows(target.Name))
+            {
+                var targetRelation = npc.Relations.get(target.Name);
+                reactions.append(applyToKnownTarget(effect, performer, targetRelation, direction, npc));
+            }
+            else
+            {
+                reactions.append(applyToUnknownTarget(effect, performer, target, direction, npc));
+            }
         }
     }
 

@@ -14,7 +14,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     let target: IEmotional = {
@@ -23,7 +24,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     let crowd1: IEmotional = {
@@ -32,7 +34,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     let crowd2: IEmotional = {
@@ -41,7 +44,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     performer.Relations.add("Target", new Relation(90, 50, 50));
@@ -69,7 +73,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     let target: IEmotional = {
@@ -78,7 +83,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     let crowd1: IEmotional = {
@@ -87,7 +93,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     let crowd2: IEmotional = {
@@ -96,7 +103,8 @@ describe("Applier should", () => {
         Likes: null,
         Happiness: new Happiness(),
         Personality: null,
-        Relations: new RelationSet()
+        Relations: new RelationSet(),
+        IsActive: true
     };
 
     performer.Relations.add("Target", new Relation(90, 50, 50));

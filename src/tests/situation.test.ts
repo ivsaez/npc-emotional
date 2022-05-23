@@ -9,7 +9,8 @@ describe("Situation should", () => {
         Likes: null,
         Happiness: null,
         Personality: null,
-        Relations: null
+        Relations: null,
+        IsActive: true
     }
 
     let target: IEmotional = {
@@ -18,7 +19,8 @@ describe("Situation should", () => {
         Likes: null,
         Happiness: null,
         Personality: null,
-        Relations: null
+        Relations: null,
+        IsActive: true
     }
 
     let other: IEmotional[] = [
@@ -28,7 +30,8 @@ describe("Situation should", () => {
             Likes: null,
             Happiness: null,
             Personality: null,
-            Relations: null
+            Relations: null,
+            IsActive: true
         },
         {
             Name: "second",
@@ -36,7 +39,8 @@ describe("Situation should", () => {
             Likes: null,
             Happiness: null,
             Personality: null,
-            Relations: null
+            Relations: null,
+            IsActive: true
         }
     ];
 
@@ -63,7 +67,8 @@ describe("Situation should", () => {
         Likes: null,
         Happiness: null,
         Personality: null,
-        Relations: null
+        Relations: null,
+        IsActive: true
     }
 
     let other: IEmotional[] = [
@@ -73,7 +78,8 @@ describe("Situation should", () => {
             Likes: null,
             Happiness: null,
             Personality: null,
-            Relations: null
+            Relations: null,
+            IsActive: true
         },
         {
             Name: "second",
@@ -81,7 +87,8 @@ describe("Situation should", () => {
             Likes: null,
             Happiness: null,
             Personality: null,
-            Relations: null
+            Relations: null,
+            IsActive: true
         }
     ];
 
@@ -101,7 +108,8 @@ describe("Situation should", () => {
         Likes: null,
         Happiness: null,
         Personality: null,
-        Relations: null
+        Relations: null,
+        IsActive: true
     }
 
     let target: IEmotional = {
@@ -110,7 +118,8 @@ describe("Situation should", () => {
         Likes: null,
         Happiness: null,
         Personality: null,
-        Relations: null
+        Relations: null,
+        IsActive: true
     }
 
     let situation = new Situation(performer, target);
@@ -130,7 +139,8 @@ describe("Situation should", () => {
         Likes: null,
         Happiness: null,
         Personality: null,
-        Relations: null
+        Relations: null,
+        IsActive: true
     }
 
     let other: IEmotional[] = [
@@ -140,7 +150,8 @@ describe("Situation should", () => {
             Likes: null,
             Happiness: null,
             Personality: null,
-            Relations: null
+            Relations: null,
+            IsActive: true
         },
         {
             Name: "second",
@@ -148,7 +159,8 @@ describe("Situation should", () => {
             Likes: null,
             Happiness: null,
             Personality: null,
-            Relations: null
+            Relations: null,
+            IsActive: true
         }
     ];
 

@@ -8,5 +8,6 @@ export interface IEmotional{
     Happiness: Happiness,
     Personality: Personality,
     Aspect: Aspect,
-    Likes: Likes
+    Likes: Likes,
+    IsActive: boolean
 }
